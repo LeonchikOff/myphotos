@@ -1,8 +1,8 @@
 package org.example.model;
 
-public interface AsyncOperation<T> {
+public interface AsyncOperation<TypeOfObjectOperationIsExecuted> {
 
     long getTimeOutOfOperationInMillis();
-    void onSuccessOperation(T result);
+    void onSuccessOperation(TypeOfObjectOperationIsExecuted result);
     void onFailedOperation(Throwable throwable);
 }
