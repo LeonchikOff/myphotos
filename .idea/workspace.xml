@@ -16,22 +16,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb53119c-4819-4938-a3a9-c6ad218f43ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/OriginalImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/Pageable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/SortMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/AccessToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/Photo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/service/AccessTokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/service/PhotoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/service/ProfileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/service/ProfileSignUpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/service/SocialService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/resources/dumpOfmyphotosDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-model/myphotos-model.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/AbstractDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/validation/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/validation/EnglishLanguage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/validation/EnglishLanguageConstraintValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-rest/myphotos-rest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-ws/myphotos-ws.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/exception/RetrieveSocialDataFailedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/exception/FailedRetrievalSocialDataException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/AsyncOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/AsyncOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/AccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/AccessToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/Photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/domain/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +44,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,19 +69,30 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="5838bbd5-21a6-4d86-9ad5-4c2b46fe32c9" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23359074" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.model.validation" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="org.example.model.domain" />
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-web" />
       <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-rest" />
@@ -174,6 +188,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -185,8 +202,16 @@
       <option name="presentableId" value="Default" />
       <updated>1674918844484</updated>
       <workItem from="1674918849014" duration="1631000" />
-      <workItem from="1674923967031" duration="28059000" />
+      <workItem from="1674923967031" duration="44954000" />
     </task>
+    <task id="LOCAL-00001" summary="Creation of domain model classes and service interfaces for the &quot;myphotos-model&quot; module.&#10;Creating a dump of the &quot;myphotos&quot; database">
+      <created>1675011387087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675011387087</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,19 +228,39 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creation of domain model classes and service interfaces for the &quot;myphotos-model&quot; module.&#10;Creating a dump of the &quot;myphotos&quot; database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of domain model classes and service interfaces for the &quot;myphotos-model&quot; module.&#10;Creating a dump of the &quot;myphotos&quot; database" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="126" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1674936347771">
+    <state x="668" y="304" key="#Assign_Data_Sources" timestamp="1675013846026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="126" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1674936347771" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1674934862482">
+    <state x="668" y="304" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1675013846026" />
+    <state x="383" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1675012975979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1674934862482" />
-    <state x="399" y="101" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1674925879012">
+    <state x="383" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1675012975979" />
+    <state x="414" y="100" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1675013358136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="399" y="101" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1674925879012" />
+    <state x="414" y="100" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1675013358136" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1675026288694">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1675026288694" />
+    <state x="493" y="157" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1675014201539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="493" y="157" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1675014201539" />
+    <state x="399" y="101" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1675013763925">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="399" y="101" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1675013763925" />
+    <state x="434" y="42" width="812" height="782" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1675014790429">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="434" y="42" width="812" height="782" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1675014790429" />
     <state x="546" y="281" width="444" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1675008148469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -224,6 +269,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="214" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1674935447219" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1675014737117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1675014737117" />
     <state x="499" y="167" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1674925993124">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,21 +341,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1208" height="400" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1674926616023" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1674927291767">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1675018357867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1674927291767" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1675018357867" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1675011425021">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1675011425021" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1675023314217">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1675023314217" />
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1674925991861">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1674925991861" />
-    <state x="0" y="0" width="1536" height="824" key="new project wizard" timestamp="1674931624189">
+    <state x="0" y="0" width="1536" height="824" key="new project wizard" timestamp="1675013735295">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" width="1536" height="824" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1674931624189" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1674929210506">
+    <state x="0" y="0" width="1536" height="824" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1675013735295" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1675016806825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1674929210506" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1675016806825" />
   </component>
 </project>
