@@ -2,6 +2,8 @@ package org.example.ejb;
 
 import org.example.common.cdi.annotation.PropertiesSource;
 import org.example.common.cdi.annotation.Property;
+import org.example.ejb.repositories.mock.InMemoryRepositoryFactory;
+import org.example.ejb.repositories.mock.proxy_handlers.PhotoRepositoryInvocationHandler;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.Singleton;
