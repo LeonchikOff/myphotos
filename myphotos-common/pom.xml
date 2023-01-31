@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
@@ -16,16 +17,49 @@
 
     <dependencies>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>7.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
             <groupId>org.example</groupId>
             <artifactId>myphotos-model</artifactId>
             <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--
+      Java EE (Java Enterprise Edition)
+       — набор спецификаций и соответствующей документации для языка Java,
+       описывающей архитектуру серверной платформы для задач средних и крупных предприятий.
+       PS: в 2018г переименована в Jakarta EE
+      JavaEE-API
+      - библиотека классов и интерфейсов
+      используемых для создания приложений, решающих задачи средних и крупных предприятий
+      ****************************************************************************************************************
+      EJB	Enterprise JavaBeans — спецификация технологии серверных компонентов, содержащих бизнес-логику
+      JPA	Java Persistence API — управление постоянством и объектно-реляционное отображение
+      Servlet	Обслуживание запросов веб-клиентов
+      JSP	JavaServer Pages — динамическая генерация веб-страниц на стороне сервера
+      JSTL	JavaServer Pages Standard Tag Library
+      JSF	JavaServer Faces — компонентный серверный фреймворк для разработки веб-приложений на технологии Java
+      JAX-WS	Java API for XML Web Services — создание веб-сервисов
+      JAX-RS	Java API for RESTful Web Services — создание RESTful веб-сервисов
+      WebSocket	Java API for WebSocket
+      JSON-P	Java API for JSON Processing — разбор и генерация JSON
+      JSON-B	Java API for JSON Binding — преобразование Java объектов в/из JSON
+      JNDI	Java Naming and Directory Interface — служба каталогов
+      JMS	Java Message Service — обмен сообщениями
+      JTA	Java Transaction API — управление транзакциями
+      JAAS	Java Authentication and Authorization Service — Java-реализация PAM
+      JavaMail	Получение и отправка электронной почты
+      JACC	Java Authorization Contract for Containers
+      JCA	J2EE Connector Architecture
+      JAF	JavaBeans Activation Framework
+      StAX	Streaming API for XML
+      CDI	Context and Dependency Injection
+      Validation	Bean Validation
+      Security	Java EE Security API
+      ****************************************************************************************************************
+      -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

@@ -1,2 +1,9 @@
-/.idea/
-/.git/
+/.idea
+/.git
+/myphotos-common/target
+/myphotos-ear/target
+/myphotos-ejb/target
+/myphotos-model/target
+/myphotos-rest/target
+/myphotos-web/target
+/myphotos-ws/target
