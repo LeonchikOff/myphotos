@@ -16,17 +16,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb53119c-4819-4938-a3a9-c6ad218f43ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/beans/AccessTokenServiceBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/beans/PhotoServiceBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/beans/ProfileServiceBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/resources/META-INF/ejb-jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/controllers/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/controllers/ResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/filters/CurrentRequestUrlFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/utils/RoutingUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/fragment/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/fragment/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/fragment/more-photos.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/fragment/scripts.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/fragment/styles.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/template/page-template.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/view/profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/fine-uploader-gallery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/images/overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/uploader/continue.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/uploader/edit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/uploader/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/uploader/pause.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/uploader/processing.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/uploader/retry.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/css/uploader/trash.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/images/avatar_placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/images/not_available-generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/images/upload-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/images/waiting-generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/fine-uploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/ie/PIE.htc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/ie/backgroundsize.min.htc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/ie/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/ie/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/jquery.poptrox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/skel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/NewSessionBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/InMemoryDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/InMemoryDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/InMemoryRepositoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/InMemoryRepositoryFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/service/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/service/PhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/model/domain/AbstractDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/model/domain/AbstractDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/model/domain/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/model/domain/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +91,7 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -75,29 +128,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/myphotos-ejb/src/main/resources/META-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/myphotos-web/src/main/webapp" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23359074" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.example.ejb.repositories.mock.proxy_handlers" />
-      <recent name="org.example.model.validation" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-web\src\main\webapp\WEB-INF\template" />
+      <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-common\src\main\resources\META-INF\services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-web\src\main\webapp" />
+      <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-web\src\main\webapp\static" />
       <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-ejb\src\main\resources\META-INF" />
       <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-ejb\src\main\resources" />
       <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-web" />
-      <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-rest" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="org.example.model.domain" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-common\src\main\resources\META-INF\services" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.ejb.repositories.mock.proxy_handlers" />
+      <recent name="org.example.model.validation" />
     </key>
   </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish 5.1.0">
@@ -209,7 +264,7 @@
       <workItem from="1675160669570" duration="858000" />
       <workItem from="1675175458096" duration="14460000" />
       <workItem from="1675254460097" duration="9169000" />
-      <workItem from="1675267174026" duration="1337000" />
+      <workItem from="1675267174026" duration="21675000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of domain model classes and service interfaces for the &quot;myphotos-model&quot; module.&#10;Creating a dump of the &quot;myphotos&quot; database">
       <created>1675011387087</created>
@@ -239,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675191655896</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="EJB Service implementations &#10;PhotoServiceBean, ProfileServiceBean AccessTokenServiceBean">
+      <created>1675268987274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675268987274</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,13 +324,18 @@
     <MESSAGE value="Domain models and data storage models were created, &#10;and also, validation rules for entity components were established, which was achieved with using the Java Persistence and Bean Validation API from the JavaEE7-API library." />
     <MESSAGE value="Used CDI annotations, created producers and added beans to the CDI container. Application properties have been configured. The application constants class and the enum ImageCategory class have been created." />
     <MESSAGE value="Repository interfaces and mock implementations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repository interfaces and mock implementations" />
+    <MESSAGE value="EJB Service implementations &#10;PhotoServiceBean, ProfileServiceBean AccessTokenServiceBean" />
+    <option name="LAST_COMMIT_MESSAGE" value="EJB Service implementations &#10;PhotoServiceBean, ProfileServiceBean AccessTokenServiceBean" />
   </component>
   <component name="WindowStateProjectService">
     <state x="668" y="304" key="#Assign_Data_Sources" timestamp="1675013846026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="668" y="304" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1675013846026" />
+    <state x="535" y="0" key="#Auto_Import" timestamp="1675279573793">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="535" y="0" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1675279573793" />
     <state x="383" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1675183067069">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -281,10 +348,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="414" y="100" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1675013358136" />
-    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1675259536949">
+    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1675289336896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1675259536949" />
+    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1675289336896" />
     <state x="493" y="157" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1675014201539">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -325,10 +392,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="52" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1675028754767" />
-    <state x="532" y="258" key="FileChooserDialogImpl" timestamp="1675260836113">
+    <state x="532" y="258" key="FileChooserDialogImpl" timestamp="1675291689196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="532" y="258" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1675260836113" />
+    <state x="532" y="258" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1675291689196" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1674933667281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -337,54 +404,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="464" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1674933709267" />
-    <state width="1293" height="432" key="GridCell.Tab.0.bottom" timestamp="1675267384606">
+    <state width="1293" height="321" key="GridCell.Tab.0.bottom" timestamp="1675291989701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="432" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
-    <state width="1293" height="432" key="GridCell.Tab.0.center" timestamp="1675267384606">
+    <state width="1293" height="321" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675291989701" />
+    <state width="1293" height="321" key="GridCell.Tab.0.center" timestamp="1675291989701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="432" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
-    <state width="1293" height="432" key="GridCell.Tab.0.left" timestamp="1675267384606">
+    <state width="1293" height="321" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1675291989701" />
+    <state width="1293" height="321" key="GridCell.Tab.0.left" timestamp="1675291989701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="432" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
-    <state width="1293" height="432" key="GridCell.Tab.0.right" timestamp="1675267384606">
+    <state width="1293" height="321" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1675291989701" />
+    <state width="1293" height="321" key="GridCell.Tab.0.right" timestamp="1675291989701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="432" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
-    <state width="1293" height="432" key="GridCell.Tab.1.bottom" timestamp="1675267384606">
+    <state width="1293" height="321" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1675291989701" />
+    <state width="1293" height="321" key="GridCell.Tab.1.bottom" timestamp="1675291989701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="432" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
-    <state width="1293" height="432" key="GridCell.Tab.1.center" timestamp="1675267384606">
+    <state width="1293" height="321" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675291989701" />
+    <state width="1293" height="321" key="GridCell.Tab.1.center" timestamp="1675291989701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="432" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
-    <state width="1293" height="432" key="GridCell.Tab.1.left" timestamp="1675267384606">
+    <state width="1293" height="321" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1675291989701" />
+    <state width="1293" height="321" key="GridCell.Tab.1.left" timestamp="1675291989701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="432" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
-    <state width="1293" height="432" key="GridCell.Tab.1.right" timestamp="1675267384606">
+    <state width="1293" height="321" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1675291989701" />
+    <state width="1293" height="321" key="GridCell.Tab.1.right" timestamp="1675291989701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="432" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
-    <state width="1293" height="175" key="GridCell.Tab.2.bottom" timestamp="1675267034571">
+    <state width="1293" height="321" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1675291989701" />
+    <state width="1293" height="321" key="GridCell.Tab.2.bottom" timestamp="1675291382095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="175" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675267034571" />
-    <state width="1293" height="175" key="GridCell.Tab.2.center" timestamp="1675267034571">
+    <state width="1293" height="321" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675291382095" />
+    <state width="1293" height="321" key="GridCell.Tab.2.center" timestamp="1675291382095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="175" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1675267034571" />
-    <state width="1293" height="175" key="GridCell.Tab.2.left" timestamp="1675267034571">
+    <state width="1293" height="321" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1675291382095" />
+    <state width="1293" height="321" key="GridCell.Tab.2.left" timestamp="1675291382095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="175" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1675267034571" />
-    <state width="1293" height="175" key="GridCell.Tab.2.right" timestamp="1675267034571">
+    <state width="1293" height="321" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1675291382095" />
+    <state width="1293" height="321" key="GridCell.Tab.2.right" timestamp="1675291382095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="175" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1675267034571" />
+    <state width="1293" height="321" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1675291382095" />
     <state width="1208" height="400" key="GridCell.Tab.3.bottom" timestamp="1674926616023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -421,10 +488,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1675191393870" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1675191664104">
+    <state x="506" y="83" key="Vcs.Push.Dialog.v2" timestamp="1675269006561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1675191664104" />
+    <state x="506" y="83" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1675269006561" />
     <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1675023314217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

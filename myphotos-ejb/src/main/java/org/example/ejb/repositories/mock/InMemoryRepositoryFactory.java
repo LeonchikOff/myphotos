@@ -9,8 +9,6 @@ import org.example.ejb.repositories.mock.proxy_handlers.ProfileRepositoryInvocat
 import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 @Dependent

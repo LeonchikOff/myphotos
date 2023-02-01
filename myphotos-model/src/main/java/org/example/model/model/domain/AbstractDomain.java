@@ -7,7 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 
 @MappedSuperclass
 public abstract class AbstractDomain implements Serializable {

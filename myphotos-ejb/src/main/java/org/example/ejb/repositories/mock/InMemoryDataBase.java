@@ -25,8 +25,9 @@ public final class InMemoryDataBase {
         Profile profile = new Profile();
         profile.setId(1L);
         profile.setUid("richard-hendricks");
-        profile.setDateOfCreated((java.sql.Date) new Date());
-        profile.setFirstName("Richard");
+
+        profile.setDateOfCreated(new Date());
+        profile.setFirstName("RichardDDD");
         profile.setLastName("Hendricks");
         profile.setJobTitle("CEO of Pied Piper");
         profile.setLocation("Los Angeles, California");
@@ -48,7 +49,7 @@ public final class InMemoryDataBase {
             photo.setUrlToOriginal(imageUrl);
             photo.setCountOfViews(random.nextInt(100) * 10 + 1);
             photo.setCountOfDownloads(random.nextInt(20) * 10 + 1);
-            photo.setDateOfCreated((java.sql.Date) new Date());
+            photo.setDateOfCreated(new Date());
             photos.add(photo);
         }
         return Collections.unmodifiableList(photos);
