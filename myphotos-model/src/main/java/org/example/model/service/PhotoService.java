@@ -7,6 +7,7 @@ import org.example.model.model.domain.Profile;
 
 import java.util.List;
 
+
 public interface PhotoService {
 
     List<Photo> findProfilePhotos(Long profileId, Pageable pageable);
@@ -14,6 +15,7 @@ public interface PhotoService {
     long countAllPhotos();
 
     void uploadNewPhoto(Profile currentProfile, ImageResource imageResource, AsyncOperation<Photo> photoAsyncOperation);
+
 
     OriginalImage getDownloadableOriginalPhotoAndIncrementCountOfDownloads(Long photoId)
             throws ObjectNotFoundException;

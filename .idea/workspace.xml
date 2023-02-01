@@ -16,19 +16,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb53119c-4819-4938-a3a9-c6ad218f43ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/AccessTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/EntityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/PhotoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/ProfileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/InMemoryDataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/InMemoryRepositoryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/proxy_handlers/PhotoRepositoryInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/proxy_handlers/ProfileRepositoryInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/beans/AccessTokenServiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/beans/PhotoServiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/beans/ProfileServiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/resources/META-INF/ejb-jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-ejb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/NewSessionBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/InMemoryRepositoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/mock/InMemoryRepositoryFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/service/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/service/PhotoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JavaeeView">
+    <option name="showModules" value="false" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -206,7 +207,9 @@
       <workItem from="1674918849014" duration="1631000" />
       <workItem from="1674923967031" duration="70463000" />
       <workItem from="1675160669570" duration="858000" />
-      <workItem from="1675175458096" duration="13693000" />
+      <workItem from="1675175458096" duration="14460000" />
+      <workItem from="1675254460097" duration="9169000" />
+      <workItem from="1675267174026" duration="1337000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of domain model classes and service interfaces for the &quot;myphotos-model&quot; module.&#10;Creating a dump of the &quot;myphotos&quot; database">
       <created>1675011387087</created>
@@ -229,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675183531143</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Repository interfaces and mock implementations">
+      <created>1675191655896</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675191655896</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +261,8 @@
     <MESSAGE value="Creation of domain model classes and service interfaces for the &quot;myphotos-model&quot; module.&#10;Creating a dump of the &quot;myphotos&quot; database" />
     <MESSAGE value="Domain models and data storage models were created, &#10;and also, validation rules for entity components were established, which was achieved with using the Java Persistence and Bean Validation API from the JavaEE7-API library." />
     <MESSAGE value="Used CDI annotations, created producers and added beans to the CDI container. Application properties have been configured. The application constants class and the enum ImageCategory class have been created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Used CDI annotations, created producers and added beans to the CDI container. Application properties have been configured. The application constants class and the enum ImageCategory class have been created." />
+    <MESSAGE value="Repository interfaces and mock implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repository interfaces and mock implementations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="668" y="304" key="#Assign_Data_Sources" timestamp="1675013846026">
@@ -270,10 +281,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="414" y="100" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1675013358136" />
-    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1675188654325">
+    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1675259536949">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1675188654325" />
+    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1675259536949" />
     <state x="493" y="157" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1675014201539">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -314,10 +325,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="52" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1675028754767" />
-    <state x="532" y="258" key="FileChooserDialogImpl" timestamp="1674926358655">
+    <state x="532" y="258" key="FileChooserDialogImpl" timestamp="1675260836113">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="532" y="258" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1674926358655" />
+    <state x="532" y="258" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1675260836113" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1674933667281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -326,54 +337,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="464" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1674933709267" />
-    <state width="1493" height="296" key="GridCell.Tab.0.bottom" timestamp="1675191497578">
+    <state width="1293" height="432" key="GridCell.Tab.0.bottom" timestamp="1675267384606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="296" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675191497578" />
-    <state width="1493" height="296" key="GridCell.Tab.0.center" timestamp="1675191497578">
+    <state width="1293" height="432" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
+    <state width="1293" height="432" key="GridCell.Tab.0.center" timestamp="1675267384606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="296" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1675191497578" />
-    <state width="1493" height="296" key="GridCell.Tab.0.left" timestamp="1675191497578">
+    <state width="1293" height="432" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
+    <state width="1293" height="432" key="GridCell.Tab.0.left" timestamp="1675267384606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="296" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1675191497578" />
-    <state width="1493" height="296" key="GridCell.Tab.0.right" timestamp="1675191497578">
+    <state width="1293" height="432" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
+    <state width="1293" height="432" key="GridCell.Tab.0.right" timestamp="1675267384606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="296" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1675191497578" />
-    <state width="1293" height="175" key="GridCell.Tab.1.bottom" timestamp="1675191139719">
+    <state width="1293" height="432" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
+    <state width="1293" height="432" key="GridCell.Tab.1.bottom" timestamp="1675267384606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="175" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675191139719" />
-    <state width="1293" height="175" key="GridCell.Tab.1.center" timestamp="1675191139719">
+    <state width="1293" height="432" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
+    <state width="1293" height="432" key="GridCell.Tab.1.center" timestamp="1675267384606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="175" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1675191139719" />
-    <state width="1293" height="175" key="GridCell.Tab.1.left" timestamp="1675191139719">
+    <state width="1293" height="432" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
+    <state width="1293" height="432" key="GridCell.Tab.1.left" timestamp="1675267384606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="175" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1675191139719" />
-    <state width="1293" height="175" key="GridCell.Tab.1.right" timestamp="1675191139719">
+    <state width="1293" height="432" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
+    <state width="1293" height="432" key="GridCell.Tab.1.right" timestamp="1675267384606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="175" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1675191139719" />
-    <state width="1293" height="370" key="GridCell.Tab.2.bottom" timestamp="1675105604270">
+    <state width="1293" height="432" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1675267384606" />
+    <state width="1293" height="175" key="GridCell.Tab.2.bottom" timestamp="1675267034571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="370" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675105604270" />
-    <state width="1293" height="370" key="GridCell.Tab.2.center" timestamp="1675105604269">
+    <state width="1293" height="175" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675267034571" />
+    <state width="1293" height="175" key="GridCell.Tab.2.center" timestamp="1675267034571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="370" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1675105604269" />
-    <state width="1293" height="370" key="GridCell.Tab.2.left" timestamp="1675105604269">
+    <state width="1293" height="175" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1675267034571" />
+    <state width="1293" height="175" key="GridCell.Tab.2.left" timestamp="1675267034571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="370" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1675105604269" />
-    <state width="1293" height="370" key="GridCell.Tab.2.right" timestamp="1675105604269">
+    <state width="1293" height="175" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1675267034571" />
+    <state width="1293" height="175" key="GridCell.Tab.2.right" timestamp="1675267034571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="370" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1675105604269" />
+    <state width="1293" height="175" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1675267034571" />
     <state width="1208" height="400" key="GridCell.Tab.3.bottom" timestamp="1674926616023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -410,10 +421,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1675191393870" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1675183546194">
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1675191664104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1675183546194" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1675191664104" />
     <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1675023314217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
