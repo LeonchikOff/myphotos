@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                                 http://java.sun.com/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+    <persistence-unit name="org.example.myphotos.pu" transaction-type="JTA">
+        <jta-data-source>jdbc/MyPhotosDBPool</jta-data-source>
+        <mapping-file>META-INF/mapping.xml</mapping-file>
+        <class>org.example.model.model.domain.AbstractDomain</class>
+        <class>org.example.model.model.domain.AccessToken</class>
+        <class>org.example.model.model.domain.Profile</class>
+        <class>org.example.model.model.domain.Photo</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="eclipselink.logging.level.sql" value="FINE"/>
+            <property name="eclipselink.logging.parameters" value="true"/>
+            <property name="javax.persistence.validation.group.pre-persist" value="javax.validation.groups.Default"/>
+            <property name="javax.persistence.validation.group.pre-update"  value="javax.validation.groups.Default"/>
+        </properties>
+    </persistence-unit>
+</persistence>
