@@ -1,6 +1,8 @@
 package org.example.ejb.service.beans;
 
 import org.example.ejb.repositories.PhotoRepository;
+import org.example.ejb.repositories.ProfileRepository;
+import org.example.ejb.service.interceptors.AsyncOperationInterceptor;
 import org.example.model.exception.ObjectNotFoundException;
 import org.example.model.model.*;
 import org.example.model.model.domain.Photo;
@@ -8,8 +10,18 @@ import org.example.model.model.domain.Profile;
 import org.example.model.service.PhotoService;
 
 import javax.annotation.Resource;
-import javax.ejb.*;
+import javax.ejb.Asynchronous;
+import javax.ejb.EJB;
+import javax.ejb.Local;
+import javax.ejb.LocalBean;
+import javax.ejb.SessionContext;
+import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
 import javax.inject.Inject;
+import javax.interceptor.Interceptors;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,8 +31,15 @@ import java.util.Optional;
 @TransactionManagement(TransactionManagementType.CONTAINER)
 public class PhotoServiceBean implements PhotoService {
 
+    @EJB
+    private ImageProcessorBean imageProcessorBean;
+
     @Inject
     private PhotoRepository photoRepository;
+
+    @Inject
+    private ProfileRepository profileRepository;
+
 
     @Resource
     private SessionContext sessionContext;
@@ -50,16 +69,26 @@ public class PhotoServiceBean implements PhotoService {
 
     @Override
     @Asynchronous
+    @Interceptors(value = {AsyncOperationInterceptor.class})
     @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
     public void uploadNewPhoto(Profile currentProfile, ImageResource imageResource, AsyncOperation<Photo> photoAsyncOperation) {
         try {
-            Photo photo = null; //FIXME
+            Photo photo = uploadNewPhotoAndGet(currentProfile, imageResource);
             photoAsyncOperation.onSuccessOperation(photo);
-
         } catch (Throwable throwable) {
             sessionContext.getRollbackOnly();
             photoAsyncOperation.onFailedOperation(throwable);
         }
+    }
+
+    public Photo uploadNewPhotoAndGet(Profile currentProfile, ImageResource imageResource) {
+        Photo photo = imageProcessorBean.processPhotoAndGet(imageResource);
+        photo.setProfile(currentProfile);
+        photoRepository.create(photo);
+        photoRepository.flash();
+        currentProfile.setPhotoCount(photoRepository.countOfProfilePhotos(currentProfile.getId()));
+        profileRepository.update(currentProfile);
+        return photo;
     }
 
     @Override

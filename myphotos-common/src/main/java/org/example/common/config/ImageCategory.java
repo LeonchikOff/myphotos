@@ -7,10 +7,10 @@ public enum ImageCategory {
     LARGE_PHOTO("media/photo/", 1600, 900, false, 1.0);
 
 
-    public static boolean isImageCategoryUrl(String url) {
-        if (url != null)
+    public static boolean isImageCategoryUrl(String imageUrl) {
+        if (imageUrl != null)
             for (ImageCategory imageCategory : ImageCategory.values())
-                if (url.contains(imageCategory.relativeRoot)) return true;
+                if (imageUrl.contains(imageCategory.relativeRoot)) return true;
         return false;
     }
 
@@ -20,7 +20,7 @@ public enum ImageCategory {
     private final int height;
     private final boolean crop;
     private final double quality;
-    private final String outputFormat;
+    private final String outputExtensionFormat;
 
     ImageCategory(String relativeRoot, int width, int height, boolean crop, double quality) {
         this.relativeRoot = relativeRoot;
@@ -28,7 +28,7 @@ public enum ImageCategory {
         this.height = height;
         this.crop = crop;
         this.quality = quality;
-        this.outputFormat = "jpg";
+        this.outputExtensionFormat = "jpg";
     }
 
     public String getRelativeRoot() {
@@ -51,7 +51,7 @@ public enum ImageCategory {
         return quality;
     }
 
-    public String getOutputFormat() {
-        return outputFormat;
+    public String getOutputExtensionFormat() {
+        return outputExtensionFormat;
     }
 }
