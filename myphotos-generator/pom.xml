@@ -35,6 +35,22 @@
             <artifactId>tomee-embedded</artifactId>
             <version>7.0.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>myphotos-model</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>myphotos-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>myphotos-ejb</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
