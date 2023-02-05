@@ -15,7 +15,7 @@ public class UpdatePhotoService {
     @Inject
     private PhotoRepository photoRepository;
 
-    private Random random = new Random();
+    private final Random random = new Random();
 
     @Transactional
     public void updatePhotos(List<Photo> photoList) {

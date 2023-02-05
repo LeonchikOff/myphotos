@@ -40,7 +40,7 @@ public abstract class AbstractEnvironmentGenerator {
         for (String moduleEJBValue : modulesEJBValue) {
             pathsToModulesList.add(new File(getFullPathToModule(moduleEJBValue)));
         }
-        pathsToModulesList.add(new File("target/classes"));
+        pathsToModulesList.add(new File("myphotos-generator/target/classes"));
         mapOfPropertiesForCreatingNewEJBContainer
                 .put(EJBContainer.MODULES, pathsToModulesList.toArray(new File[pathsToModulesList.size()]));
     }

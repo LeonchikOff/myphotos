@@ -29,16 +29,6 @@ public abstract class AbstractDomain implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public int hashCode() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
     }

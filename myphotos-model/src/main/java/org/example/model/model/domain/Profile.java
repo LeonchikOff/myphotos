@@ -30,8 +30,9 @@ public class Profile extends AbstractDomain {
     @Column(name = "uid", unique = true, updatable = false, nullable = false, length = 255)
     private String uid;
 
-    @Email
+
     @NotNull
+    @Email
     @Size(max = 100)
     @Basic(optional = false)
     @Column(name = "email", unique = true, updatable = false, nullable = false, length = 100)

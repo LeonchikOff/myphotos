@@ -7,6 +7,7 @@ import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Any;
+import javax.enterprise.inject.spi.Bean;
 import javax.enterprise.inject.spi.BeanManager;
 import javax.enterprise.util.AnnotationLiteral;
 import javax.inject.Inject;
@@ -72,7 +73,7 @@ public class StaticJPAQueryInitializer {
             beanManager.getBeans(Object.class, new AnnotationLiteral<Any>() {
             }).forEach(bean -> {
                 Class<?> beanClass = bean.getBeanClass();
-                if (AbstractJPARepository.class.isAssignableFrom(beanClass)) {
+                if (isCandidateValid(bean) && AbstractJPARepository.class.isAssignableFrom(beanClass)) {
                     setRepositoryClasses.add(beanClass);
                     logger.log(Level.INFO, "Found {0} JPA Repository class", beanClass.getName());
                 }
@@ -80,13 +81,13 @@ public class StaticJPAQueryInitializer {
             return setRepositoryClasses;
         }
 
+        protected boolean isCandidateValid(Bean<?> bean) {
+            return true;
+        }
 //        protected Class<?> getRepositoryClass() {
 //            return AbstractJPARepository.class;
 //        }
 //
-//        protected boolean isCandidateValid(Bean<?> bean) {
-//            return true;
-//        }
     }
 
     @SuppressWarnings("EjbProhibitedPackageUsageInspection")

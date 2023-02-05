@@ -32,15 +32,16 @@ public class ProfileGenerator {
     public List<Profile> generateProfiles() {
         File file = new File("external/test-data/profiles.xml");
         try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(Profile.class);
+            JAXBContext jaxbContext = JAXBContext.newInstance(Profiles.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             Profiles profiles = (Profiles) jaxbUnmarshaller.unmarshal(file);
             final Date dateOfCreated = new Date();
             return Collections.unmodifiableList(
                     profiles
-                            .getProfile().stream()
+                            .getProfile()
+                            .stream()
                             .peek(profile -> {
-                                profile.setUid(String.format("%s-%s", profile.getFirstName(), profile.getLastName().toLowerCase()));
+                                profile.setUid(String.format("%s-%s", profile.getFirstName().toLowerCase(), profile.getLastName().toLowerCase()));
                                 profile.setEmail(profile.getUid() + "@myphotos.com");
                                 profile.setPhotoCount(random.nextInt(15) + random.nextInt(5) + 3);
                                 profile.setDateOfCreated(dateOfCreated);
@@ -63,5 +64,7 @@ public class ProfileGenerator {
             this.profile = profile;
         }
     }
+
+
 }
 
