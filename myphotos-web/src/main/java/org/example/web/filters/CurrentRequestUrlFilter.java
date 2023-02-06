@@ -21,7 +21,7 @@ public class CurrentRequestUrlFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         String requestURI = request.getRequestURI();
-        System.out.println(CURRENT_REQUEST_URL + ": " + requestURI);
+//        System.out.println(CURRENT_REQUEST_URL + ": " + requestURI);
         request.setAttribute(CURRENT_REQUEST_URL, requestURI);
         filterChain.doFilter(request, response);
     }

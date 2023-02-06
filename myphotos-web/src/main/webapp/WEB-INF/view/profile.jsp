@@ -17,7 +17,12 @@
         <h3>${requestScope.profile.photoCount} Photos | Last Photo:
             <fmt:formatDate value="${requestScope.photos[0].dateOfCreated}" type="DATE" dateStyle="SHORT"/>
         </h3>
-        <div id="photo-container" class="row" data-page="1" data-total-count="12" data-more-url="more.html">
+        <div id="photo-container"
+             class="row"
+             data-page="1"
+             data-total-count="${requestScope.profile.photoCount}"
+             data-more-url="/photos/profile/more?profileId=${requestScope.profile.id}&">
+
             <jsp:include page="../fragment/more-photos.jsp"/>
         </div>
         <c:if test="${requestScope.profile.photoCount > fn:length(requestScope.photos)}">

@@ -7,7 +7,7 @@
     <c:set var="classes" value="${status.index % 2 != (firstExist ? 1 : 0) ? '6u$ 12u$(xsmall)' : '6u 12u$(xsmall)'}"/>
     <article class="${classes} photo-item not-init">
         <figure>
-            <a href="${photo.urlToLarge}" class="image fit thumb">
+            <a href="/preview/${photo.id}.jpg" class="image fit thumb">
                 <img src="${photo.urlToSmall}" alt="Photo"/>
             </a>
             <figcaption>
@@ -34,7 +34,7 @@
                         <span class="text">Downloads</span></span>
                 </p>
                 <p class="actions">
-                    <a class="button special small fit" href="#">Download</a>
+                    <a class="button special small fit" href="/download/${photo.id}.jpg">Download</a>
                 </p>
             </figcaption>
         </figure>

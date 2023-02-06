@@ -15,33 +15,50 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb53119c-4819-4938-a3a9-c6ad218f43ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/jpa/listeners/AccessTokenLifeCycleManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/impl/AbstractJPARepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/impl/AccessTokenRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/impl/PhotoRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/repositories/impl/ProfileRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/resources/META-INF/mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" afterDir="false" />
+    <list default="true" id="bb53119c-4819-4938-a3a9-c6ad218f43ff" name="Default Changelist" comment="NotCommit">
+      <change afterPath="$PROJECT_DIR$/.run/NginxAndGlassFish .run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/controllers/DownloadPhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/controllers/PreviewPhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/controllers/ajax/MorePopularPhotosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/controllers/ajax/MoreProfilePhotosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/utils/UrlExtractorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/tags/sort-mode-selector.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-ejb/myphotos-ejb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/myphotos-ejb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-ejb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/model/domain/AbstractDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/model/domain/AbstractDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/model/domain/AccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-model/src/main/java/org/example/model/model/domain/AccessToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/beans/PhotoServiceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/beans/PhotoServiceBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/interceptors/AsyncOperationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-ejb/src/main/java/org/example/ejb/service/interceptors/AsyncOperationInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/controllers/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/filters/CurrentRequestUrlFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/src/main/java/org/example/web/filters/CurrentRequestUrlFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/fragment/more-photos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/fragment/more-photos.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/view/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/WEB-INF/view/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/src/main/webapp/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/myphotos-web/src/main/webapp/static/js/app.js" afterDir="false" />
+    </list>
+    <list id="fe24891f-487b-4d33-842a-0994b52b490a" name="NotCommit" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Leonchik.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/EJB_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="package-info" />
         <option value="Interface" />
+        <option value="cdi.beans_1_1" />
+        <option value="AnnotationType" />
         <option value="Jsp File" />
         <option value="Class" />
       </list>
@@ -50,20 +67,99 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="17" end1="25" start2="17" end2="40" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="26" end1="26" start2="41" end2="43" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="27" end1="32" start2="44" end2="44" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="37" end1="37" start2="49" end2="52" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="41" end1="42" start2="56" end2="56" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="43" end1="43" start2="57" end2="58" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="44" end1="44" start2="59" end2="61" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="51" end1="51" start2="68" end2="143" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="57" end1="58" start2="149" end2="150" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="62" end1="62" start2="154" end2="155" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="64" end1="64" start2="157" end2="158" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="66" end1="66" start2="160" end2="161" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="78" end1="80" start2="173" end2="176" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="82" end1="83" start2="178" end2="179" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="86" end1="86" start2="182" end2="185" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="88" end1="89" start2="187" end2="187" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="106" end1="107" start2="204" end2="245" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="181" end1="182" start2="319" end2="320" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="187" end1="187" start2="325" end2="359" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="188" end1="188" start2="360" end2="362" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="190" end1="190" start2="364" end2="367" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="193" end1="193" start2="370" end2="372" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="206" end1="206" start2="385" end2="386" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="216" end1="217" start2="396" end2="412" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="260" end1="261" start2="455" end2="498" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="285" end1="286" start2="522" end2="529" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="296" end1="297" start2="539" end2="544" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="299" end1="300" start2="546" end2="559" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="308" end1="309" start2="567" end2="568" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="311" end1="312" start2="570" end2="571" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="320" end1="320" start2="579" end2="583" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="328" end1="329" start2="591" end2="592" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="331" end1="332" start2="594" end2="595" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="348" end1="348" start2="611" end2="615" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="352" end1="353" start2="619" end2="620" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="355" end1="356" start2="622" end2="623" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="364" end1="365" start2="631" end2="632" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="367" end1="369" start2="634" end2="636" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="371" end1="373" start2="638" end2="640" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="375" end1="377" start2="642" end2="644" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="379" end1="381" start2="646" end2="648" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="383" end1="385" start2="650" end2="652" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="387" end1="389" start2="654" end2="656" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="391" end1="393" start2="658" end2="660" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="395" end1="397" start2="662" end2="664" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="399" end1="401" start2="666" end2="668" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="403" end1="405" start2="670" end2="672" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="407" end1="409" start2="674" end2="676" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="411" end1="413" start2="678" end2="680" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="415" end1="417" start2="682" end2="696" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="419" end1="421" start2="698" end2="700" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="423" end1="425" start2="702" end2="704" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="427" end1="428" start2="706" end2="711" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="444" end1="445" start2="727" end2="728" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="447" end1="449" start2="730" end2="732" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="451" end1="452" start2="734" end2="759" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="456" end1="456" start2="763" end2="767" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="460" end1="460" start2="771" end2="775" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="464" end1="465" start2="779" end2="780" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="467" end1="468" start2="782" end2="791" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="472" end1="473" start2="795" end2="796" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="475" end1="476" start2="798" end2="799" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="479" end1="479" start2="802" end2="809" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/.idea/compiler.xml">
+      <ranges>
+        <range start1="14" end1="14" start2="14" end2="15" changelist="fe24891f-487b-4d33-842a-0994b52b490a" />
+        <range start1="22" end1="22" start2="23" end2="24" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+        <range start1="23" end1="23" start2="25" end2="26" changelist="bb53119c-4819-4938-a3a9-c6ad218f43ff" />
+      </ranges>
+    </file>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
     <option name="FILTER_DEBUG" value="false" />
-    <option name="CUSTOM_FILTER" />
+    <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="ProjectId" id="2KxamFEqo4HCZIHdfLpNLXUq3Qa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ConfigurationTypeDashboardGroupingRule" value="false" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="JPA.DatabaseSchemaImportDialog" value="5838bbd5-21a6-4d86-9ad5-4c2b46fe32c9" />
@@ -76,17 +172,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/myphotos-web/src/main/webapp" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nginx-1.22.1" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23359074" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.myphotos.generator.alternative" />
+      <recent name="org.example.ejb.service.impl" />
+      <recent name="org.example.model.model" />
       <recent name="org.example.ejb.repositories.impl" />
       <recent name="org.example.ejb.repositories.mock.proxy_handlers" />
-      <recent name="org.example.model.validation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-web\src\main\webapp" />
@@ -104,7 +203,47 @@
       <recent name="D:\Projects\fullProjects\My-photos\myphotos\myphotos-common\src\main\resources\META-INF\services" />
     </key>
   </component>
-  <component name="RunManager" selected="GlassFish Server.GlassFish 5.1.0">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="CompoundRunConfigurationType" />
+        <option value="MavenRunConfiguration" />
+        <option value="nginx.configuration.type" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Compound.NginxAndGlassFish ">
+    <configuration name="DataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.myphotos.generator.DataGenerator" />
+      <module name="myphotos-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.myphotos.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DownloadPhotosFromUnsplash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.myphotos.generator.DownloadPhotosFromUnsplash" />
+      <module name="myphotos-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.myphotos.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="GlassFish 5.1.0" type="GlassfishConfiguration" />
+      <toRun name="nginx-1.22.1" type="nginx.configuration.type" />
+      <method v="2" />
+    </configuration>
     <configuration name="dumpOfmyphotosDB.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/myphotos-model/src/main/resources/dumpOfmyphotosDB.sql" />
       <script-mode>FILE</script-mode>
@@ -179,18 +318,59 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="myphotos [clean,install]" run_configuration_type="MavenRunConfiguration" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="myphotos-ear:ear" />
         </option>
       </method>
     </configuration>
+    <configuration name="myphotos [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="true" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="nginx-1.22.1" type="nginx.configuration.type" factoryName="nginx server">
+      <option name="serverDescriptorId" value="nginx.descriptor.1675639752479" />
+      <option name="showHttpLog" value="true" />
+      <option name="showErrorLog" value="true" />
+      <option name="httpLogPath" value="$PROJECT_DIR$/../nginx-1.22.1/logs/access.log" />
+      <option name="errorLogPath" value="$PROJECT_DIR$/../nginx-1.22.1/logs/error.log" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Application.DownloadPhotosFromUnsplash" />
+      <item itemvalue="Application.DataGenerator" />
       <item itemvalue="Database Script.dumpOfmyphotosDB.sql" />
       <item itemvalue="GlassFish Server.GlassFish 5.1.0" />
+      <item itemvalue="Maven.myphotos [clean,install]" />
+      <item itemvalue="nginx server.nginx-1.22.1" />
+      <item itemvalue="Compound.NginxAndGlassFish " />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DataGenerator" />
+        <item itemvalue="Application.DownloadPhotosFromUnsplash" />
         <item itemvalue="Database Script.dumpOfmyphotosDB.sql" />
       </list>
     </recent_temporary>
@@ -204,6 +384,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bb53119c-4819-4938-a3a9-c6ad218f43ff" name="Default Changelist" comment="" />
+      <changelist id="fe24891f-487b-4d33-842a-0994b52b490a" name="NotCommit" comment="" />
       <created>1674918844484</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -214,7 +395,22 @@
       <workItem from="1675175458096" duration="14460000" />
       <workItem from="1675254460097" duration="9169000" />
       <workItem from="1675267174026" duration="23341000" />
-      <workItem from="1675337135640" duration="7296000" />
+      <workItem from="1675337135640" duration="8098000" />
+      <workItem from="1675435672081" duration="12433000" />
+      <workItem from="1675451611023" duration="17239000" />
+      <workItem from="1675469172971" duration="2442000" />
+      <workItem from="1675511512617" duration="49000" />
+      <workItem from="1675511588734" duration="22035000" />
+      <workItem from="1675537080168" duration="1745000" />
+      <workItem from="1675543499974" duration="42260000" />
+      <workItem from="1675630342380" duration="112000" />
+      <workItem from="1675630468540" duration="72000" />
+      <workItem from="1675630553546" duration="62000" />
+      <workItem from="1675630628835" duration="137000" />
+      <workItem from="1675630780930" duration="59000" />
+      <workItem from="1675630852385" duration="19000" />
+      <workItem from="1675630884326" duration="10840000" />
+      <workItem from="1675643798620" duration="3044000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of domain model classes and service interfaces for the &quot;myphotos-model&quot; module.&#10;Creating a dump of the &quot;myphotos&quot; database">
       <created>1675011387087</created>
@@ -258,7 +454,49 @@
       <option name="project" value="LOCAL" />
       <updated>1675292108041</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="JPA impl mocks, entity listeners and JPA xml config files">
+      <created>1675354259336</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675354259336</updated>
+    </task>
+    <task id="LOCAL-00008" summary="JPQL implementations, StaticJPAQueryInitializer, UpdateProfileRatingBean">
+      <created>1675469438560</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675469438560</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Image processor components">
+      <created>1675528347151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675528347151</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Test data and DownloadPhotosFromUnsplash component">
+      <created>1675537787136</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675537787136</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Additional components for test data generation">
+      <created>1675559971360</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675559971360</updated>
+    </task>
+    <task id="LOCAL-00012" summary="DataGenerator + fixes for myphotos project">
+      <created>1675626121727</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675626121727</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +521,13 @@
     <MESSAGE value="Repository interfaces and mock implementations" />
     <MESSAGE value="EJB Service implementations &#10;PhotoServiceBean, ProfileServiceBean AccessTokenServiceBean" />
     <MESSAGE value="Home and Profile page handlers with mock data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home and Profile page handlers with mock data" />
+    <MESSAGE value="JPA impl mocks, entity listeners and JPA xml config files" />
+    <MESSAGE value="JPQL implementations, StaticJPAQueryInitializer, UpdateProfileRatingBean" />
+    <MESSAGE value="Image processor components" />
+    <MESSAGE value="Test data and DownloadPhotosFromUnsplash component" />
+    <MESSAGE value="Additional components for test data generation" />
+    <MESSAGE value="DataGenerator + fixes for myphotos project" />
+    <option name="LAST_COMMIT_MESSAGE" value="DataGenerator + fixes for myphotos project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="668" y="304" key="#Assign_Data_Sources" timestamp="1675013846026">
@@ -294,10 +538,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="535" y="0" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1675279573793" />
-    <state x="383" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1675183067069">
+    <state x="530" y="285" key="#BuildArtifactsBeforeRunChooser" timestamp="1675642348857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="383" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1675183067069" />
+    <state x="530" y="285" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1675642348857" />
+    <state x="620" y="254" key="#Custom_Plugin_Repositories" timestamp="1675630418432">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="620" y="254" key="#Custom_Plugin_Repositories/0.0.1536.824@0.0.1536.824" timestamp="1675630418432" />
+    <state x="540" y="319" key="#Glassfish_Server" timestamp="1675639256235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="319" key="#Glassfish_Server/0.0.1536.824@0.0.1536.824" timestamp="1675639256235" />
+    <state x="561" y="271" key="#Scopes" timestamp="1675630158512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="561" y="271" key="#Scopes/0.0.1536.824@0.0.1536.824" timestamp="1675630158512" />
+    <state x="205" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1675642364022">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="205" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1675642364022" />
     <state x="460" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1675103777476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -306,10 +566,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="414" y="100" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1675348366588" />
-    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1675353177863">
+    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1675618064104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1675353177863" />
+    <state x="764" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1675618064104" />
     <state x="493" y="157" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1675014201539">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -318,6 +578,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="399" y="101" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1675013763925" />
+    <state x="328" y="0" width="870" height="824" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1675639282231">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="328" y="0" width="870" height="824" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1675639282231" />
     <state x="434" y="42" width="812" height="782" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1675014790429">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -326,10 +590,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="341" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1675089143641" />
-    <state x="546" y="281" width="444" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1675008148469">
+    <state x="546" y="281" width="444" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1675552486159">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="546" y="281" width="444" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1675008148469" />
+    <state x="546" y="281" width="444" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1675552486159" />
     <state x="214" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1674935447219">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -346,14 +610,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="484" y="61" key="#dumpOfmyphotosDB.sql/0.0.1536.824@0.0.1536.824" timestamp="1675003924436" />
+    <state x="552" y="184" width="750" height="500" key="#nginx_Servers" timestamp="1675639777052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="552" y="184" width="750" height="500" key="#nginx_Servers/0.0.1536.824@0.0.1536.824" timestamp="1675639777052" />
     <state x="147" y="52" key="DiffContextDialog" timestamp="1675028754767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="52" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1675028754767" />
-    <state x="532" y="258" key="FileChooserDialogImpl" timestamp="1675291689196">
+    <state x="532" y="258" key="FileChooserDialogImpl" timestamp="1675639745676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="532" y="258" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1675291689196" />
+    <state x="532" y="258" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1675639745676" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1674933667281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -362,59 +630,71 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="464" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1674933709267" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1675354182489">
+    <state width="1136" height="399" key="GridCell.Tab.-1.bottom" timestamp="1675642452613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675354182489" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1675354182488">
+    <state width="1136" height="399" key="GridCell.Tab.-1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675642452613" />
+    <state width="1136" height="399" key="GridCell.Tab.-1.center" timestamp="1675642452613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1675354182488" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1675354182488">
+    <state width="1136" height="399" key="GridCell.Tab.-1.center/0.0.1536.824@0.0.1536.824" timestamp="1675642452613" />
+    <state width="1136" height="399" key="GridCell.Tab.-1.left" timestamp="1675642452613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1675354182488" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1675354182489">
+    <state width="1136" height="399" key="GridCell.Tab.-1.left/0.0.1536.824@0.0.1536.824" timestamp="1675642452613" />
+    <state width="1136" height="399" key="GridCell.Tab.-1.right" timestamp="1675642452613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1675354182489" />
-    <state width="1293" height="321" key="GridCell.Tab.1.bottom" timestamp="1675294344218">
+    <state width="1136" height="399" key="GridCell.Tab.-1.right/0.0.1536.824@0.0.1536.824" timestamp="1675642452613" />
+    <state width="1136" height="354" key="GridCell.Tab.0.bottom" timestamp="1675646584201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="321" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675294344218" />
-    <state width="1293" height="321" key="GridCell.Tab.1.center" timestamp="1675294344218">
+    <state width="1136" height="354" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675646584201" />
+    <state width="1136" height="354" key="GridCell.Tab.0.center" timestamp="1675646584201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="321" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1675294344218" />
-    <state width="1293" height="321" key="GridCell.Tab.1.left" timestamp="1675294344218">
+    <state width="1136" height="354" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1675646584201" />
+    <state width="1136" height="354" key="GridCell.Tab.0.left" timestamp="1675646584201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="321" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1675294344218" />
-    <state width="1293" height="321" key="GridCell.Tab.1.right" timestamp="1675294344218">
+    <state width="1136" height="354" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1675646584201" />
+    <state width="1136" height="354" key="GridCell.Tab.0.right" timestamp="1675646584201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="321" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1675294344218" />
-    <state width="1293" height="321" key="GridCell.Tab.2.bottom" timestamp="1675291382095">
+    <state width="1136" height="354" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1675646584201" />
+    <state width="1136" height="354" key="GridCell.Tab.1.bottom" timestamp="1675646597150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="321" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675291382095" />
-    <state width="1293" height="321" key="GridCell.Tab.2.center" timestamp="1675291382095">
+    <state width="1136" height="354" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675646597150" />
+    <state width="1136" height="354" key="GridCell.Tab.1.center" timestamp="1675646597150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="321" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1675291382095" />
-    <state width="1293" height="321" key="GridCell.Tab.2.left" timestamp="1675291382095">
+    <state width="1136" height="354" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1675646597150" />
+    <state width="1136" height="354" key="GridCell.Tab.1.left" timestamp="1675646597150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="321" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1675291382095" />
-    <state width="1293" height="321" key="GridCell.Tab.2.right" timestamp="1675291382095">
+    <state width="1136" height="354" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1675646597150" />
+    <state width="1136" height="354" key="GridCell.Tab.1.right" timestamp="1675646597150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1293" height="321" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1675291382095" />
-    <state width="1208" height="400" key="GridCell.Tab.3.bottom" timestamp="1674926616023">
+    <state width="1136" height="354" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1675646597150" />
+    <state x="0" y="407" width="1136" height="354" key="GridCell.Tab.2.bottom" timestamp="1675646583549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1208" height="400" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1674926616023" />
-    <state width="1208" height="400" key="GridCell.Tab.3.center" timestamp="1674926616023">
+    <state x="0" y="407" width="1136" height="354" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675646583549" />
+    <state x="0" y="407" width="1136" height="354" key="GridCell.Tab.2.center" timestamp="1675646583549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="407" width="1136" height="354" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1675646583549" />
+    <state x="0" y="407" width="1136" height="354" key="GridCell.Tab.2.left" timestamp="1675646583549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="407" width="1136" height="354" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1675646583549" />
+    <state x="0" y="407" width="1136" height="354" key="GridCell.Tab.2.right" timestamp="1675646583549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="407" width="1136" height="354" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1675646583549" />
+    <state width="1493" height="362" key="GridCell.Tab.3.bottom" timestamp="1675639979415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1208" height="400" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1674926616023" />

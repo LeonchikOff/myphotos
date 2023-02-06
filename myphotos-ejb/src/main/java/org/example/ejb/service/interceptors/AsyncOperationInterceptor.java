@@ -9,8 +9,7 @@ import javax.interceptor.InvocationContext;
 
 import org.example.model.model.AsyncOperation;
 
-
-@SuppressWarnings("ALL")
+@SuppressWarnings("unchecked")
 @Interceptor
 public class AsyncOperationInterceptor {
 

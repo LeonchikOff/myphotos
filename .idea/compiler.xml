@@ -20,7 +20,9 @@
       <module name="ejbs" target="1.5" />
       <module name="logging" target="1.5" />
       <module name="myphotos--test" target="1.5" />
+      <module name="myphotos-rest" target="1.8" />
       <module name="myphotos-test" target="1.5" />
+      <module name="myphotos-ws" target="1.8" />
       <module name="primary-source" target="1.5" />
       <module name="projects" target="1.5" />
       <module name="servlet" target="1.5" />

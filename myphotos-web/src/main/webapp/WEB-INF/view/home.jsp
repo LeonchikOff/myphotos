@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page pageEncoding="UTF-8" contentType="text/html" %>
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 
 <header id="header">
     <div class="inner">
@@ -26,7 +27,12 @@
                 <tags:sort-mode-selector/>
             </div>
         </div>
-        <div id="photo-container" class="row" data-page="1" data-total-count="12" data-more-url="more.html">
+        <div id="photo-container"
+             class="row"
+             data-page="1"
+             data-total-count="${requestScope.countAllPhotos}"
+             data-more-url="/photos/popular/more?sortMode=${requestScope.sortMode}&">
+
             <jsp:include page="../fragment/more-photos.jsp"/>
         </div>
         <c:if test="${requestScope.countAllPhotos > fn:length(requestScope.photos)}">

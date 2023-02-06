@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="NginxAndGlassFish " type="CompoundRunConfigurationType">
+    <toRun name="GlassFish 5.1.0" type="GlassfishConfiguration" />
+    <toRun name="nginx-1.22.1" type="nginx.configuration.type" />
+    <method v="2" />
+  </configuration>
+</component>

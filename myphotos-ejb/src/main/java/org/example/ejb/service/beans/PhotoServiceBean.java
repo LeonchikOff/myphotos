@@ -2,6 +2,7 @@ package org.example.ejb.service.beans;
 
 import org.example.ejb.repositories.PhotoRepository;
 import org.example.ejb.repositories.ProfileRepository;
+import org.example.ejb.service.ImageStorageService;
 import org.example.ejb.service.interceptors.AsyncOperationInterceptor;
 import org.example.model.exception.ObjectNotFoundException;
 import org.example.model.model.*;
@@ -39,6 +40,9 @@ public class PhotoServiceBean implements PhotoService {
 
     @Inject
     private ProfileRepository profileRepository;
+
+    @Inject
+    private ImageStorageService imageStorageService;
 
 
     @Resource
@@ -96,8 +100,7 @@ public class PhotoServiceBean implements PhotoService {
         Photo photo = this.getPhoto(photoId);
         photo.setCountOfDownloads(photo.getCountOfDownloads() + 1);
         photoRepository.update(photo);
-
-        throw new UnsupportedOperationException("Not implemented yet"); //FIXME
+        return imageStorageService.getOriginalImage(photo.getUrlToOriginal());
     }
 
     @Override

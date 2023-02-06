@@ -39,7 +39,7 @@ public class ProfileController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String requestURI = req.getRequestURI();
         if (homeUrl.contains(requestURI)) {
-            Optional<String> sortModePramOptional = Optional.ofNullable(req.getParameter("sort"));
+            Optional<String> sortModePramOptional = Optional.ofNullable(req.getParameter("sortMode"));
             SortMode sortMode = sortModePramOptional.map(new Function<String, SortMode>() {
                 @Override
                 public SortMode apply(String nameOfSortMode) {
