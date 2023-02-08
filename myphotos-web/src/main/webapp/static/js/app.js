@@ -3,7 +3,7 @@ $(function () {
     initLoadMoreButton();
     initPoptrox();
     initSortModeSelector();
-    initGooglePlusSignUp();
+    // initGooglePlus();
     initDataBindId();
     initAvatarUploader();
     initPhotosUploader();
@@ -18,7 +18,7 @@ $(function () {
 
     function initMenu() {
         $('.menu-btn').click(function () {
-            var items = $(this).parent().find('.items');
+            let items = $(this).parent().find('.items');
             if (items.hasClass('show-menu')) {
                 items.removeClass('show-menu');
             } else {
@@ -29,7 +29,7 @@ $(function () {
 
     function initSortModeSelector() {
         $('#sort-mode-selector').on('change', function () {
-            var option = this.value;
+            let option = this.value;
             window.location = '/?sortMode=' + option;
         });
     }
@@ -55,23 +55,23 @@ $(function () {
 
     function showLoadingIndicator() {
         //https://loading.io/
-        var btn = $('#load-more-button');
+        let btn = $('#load-more-button');
         btn.addClass('hidden');
         btn.parent().append('<img src="static/images/loading.gif" alt="Loading..." class="loading-indicator">');
     }
 
     function hideLoadingIndicator() {
-        var btn = $('#load-more-button');
+        let btn = $('#load-more-button');
         btn.parent().find('img').remove();
         btn.removeClass('hidden');
     }
 
     function initLoadMoreButton() {
         $('#load-more-button').click(function () {
-            var c = $('#photo-container');
-            var page = parseInt(c.attr('data-page')) + 1;
-            var photoCount = parseInt(c.attr('data-total-count'));
-            var url = c.attr('data-more-url') + '&page=' + page;
+            let c = $('#photo-container');
+            let page = parseInt(c.attr('data-page')) + 1;
+            let photoCount = parseInt(c.attr('data-total-count'));
+            let url = c.attr('data-more-url') + '&page=' + page;
             showLoadingIndicator();
             $.ajax({
                 url: url,
@@ -93,141 +93,182 @@ $(function () {
         });
     }
 
-    function initGooglePlusSignUp() {
-        var button = $('[data-sign-up]');
-        if (button.length > 0) {
-            gapi.load('auth2', function () {
-                auth2 = gapi.auth2.init({
-                    client_id: googlePlusClientId,
-                    cookiepolicy: 'profile email',
+
+    // function initGooglePlus() {
+    //     let button = $('[data-sign-up]');
+    //     if (button.length > 0) {
+    //         window.onload = function () {
+    //             google.accounts.id.initialize({
+    //                 client_id: googleClientId,
+    //                 callback: handleCredentialResponse
+    //             });
+    //         }
+    //
+    //         function handleCredentialResponse(response) {
+    //             console.log(response);
+    //             let id_token = response.credential;// validate and decode the JWT credential, using a JWT-decoding library
+    //             console.log(id_token);
+    //             alert(id_token);
+    //         }
+    //
+    //
+    //         function getToken() {
+    //             google.accounts.id.prompt();
+    //             // client.requestAccessToken()
+    //         }
+    //     }
+
+        // function init() {
+        //     client = window.google.accounts.oauth2.initTokenClient({
+        //         client_id: '672321978113-ukrutsqqe1e7v1ogb5q3c8ois8mh1koc.apps.googleusercontent.com',
+        //         scope: 'https://www.googleapis.com/auth/contacts.readonly',
+        //         callback: handleCredentialResponse,
+        //     });
+        // }
+
+
+        // function initGooglePlusSignUp() {
+        //     let button = $('[data-sign-up]');
+        //     if (button.length > 0) {
+        //         gapi.load('auth2', function () {
+        //             auth2 = gapi.auth2.init({
+        //                 client_id: googlePlusClientId,
+        //                 cookiepolicy: 'profile email',
+        //             });
+        //             console.log(auth2);
+        //             auth2.attachClickHandler(button.get()[0], {}, function (googleUser) {
+        //                 let authToken = googleUser.getAuthResponse().id_token;
+        //                 console.log(googleUser);
+        //                 console.log(authToken)
+        //                 let auth2 = gapi.auth2.getAuthInstance();
+        //                 auth2.signOut().then(function () {
+        //                     window.location = '/from/google-plus?code=' + authToken;
+        //                 });
+        //             }, function (error) {
+        //                 console.log(JSON.stringify(error, undefined, 2));
+        //                 defaultErrorHandler();
+        //             });
+        //             console.log("Init google plus signup successful");
+        //         });
+        //     }
+        // }
+
+
+        function initDataBindId() {
+            $.each($('[data-bind-id]'), function (index, val) {
+                let el = $(val);
+                el.on('input', function (e) {
+                    let value = $(this).val();
+                    let bindId = $(this).attr('data-bind-id');
+                    $('#' + bindId).text(value);
                 });
-                auth2.attachClickHandler(button.get()[0], {}, function (googleUser) {
-                    var authToken = googleUser.getAuthResponse().id_token;
-                    var auth2 = gapi.auth2.getAuthInstance();
-                    auth2.signOut().then(function () {
-                        window.location = '/from/google-plus?code=' + authToken;
-                    });
-                }, function (error) {
-                    console.log(JSON.stringify(error, undefined, 2));
-                    defaultErrorHandler();
+            });
+        }
+
+        //https://tellibus.com/fineuploader/fine-uploader-basic-demo.html
+        function initAvatarUploader() {
+            let avatarUploader = $('#avatar-uploader');
+            if (avatarUploader.length > 0) {
+                new qq.FineUploaderBasic({
+                    button: avatarUploader[0],
+                    request: {
+                        endpoint: 'upload-avatar.json'
+                    },
+                    validation: {
+                        allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                    },
+                    callbacks: {
+                        onSubmit: function (id, fileName) {
+                            $('#avatar-uploader').append('<span class="background progress"></span><img src="/static/images/loading.gif" alt="Loading..." class="progress avatar-uploading">');
+                        },
+                        onComplete: function (id, fileName, responseJSON) {
+                            $('#avatar-uploader .progress').remove();
+                            if (responseJSON.success) {
+                                $('#avatar-uploader img').attr('src', responseJSON.thumbnailUrl);
+                            } else {
+                                showError(responseJSON.error);
+                            }
+                        }
+                    },
+                    debug: true
                 });
-                console.log("Init google plus signup successful");
-            });
+            }
         }
-    }
 
-    function initDataBindId() {
-        $.each($('[data-bind-id]'), function (index, val) {
-            var el = $(val);
-            el.on('input', function (e) {
-                var value = $(this).val();
-                var bindId = $(this).attr('data-bind-id');
-                $('#' + bindId).text(value);
-            });
-        });
-    }
-    //https://tellibus.com/fineuploader/fine-uploader-basic-demo.html
-    function initAvatarUploader() {
-        var avatarUploader = $('#avatar-uploader');
-        if (avatarUploader.length > 0) {
-            new qq.FineUploaderBasic({
-                button: avatarUploader[0],
-                request: {
-                    endpoint: 'upload-avatar.json'
-                },
-                validation: {
-                    allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
-                },
-                callbacks: {
-                    onSubmit: function (id, fileName) {
-                        $('#avatar-uploader').append('<span class="background progress"></span><img src="/static/images/loading.gif" alt="Loading..." class="progress avatar-uploading">');
+        function initPhotosUploader() {
+            let upload = $('#upload-photo .button');
+            if (upload.length > 0) {
+                new qq.FineUploaderBasic({
+                    button: upload[0],
+                    request: {
+                        endpoint: 'upload-photos.json'
                     },
-                    onComplete: function (id, fileName, responseJSON) {
-                        $('#avatar-uploader .progress').remove();
-                        if (responseJSON.success) {
-                            $('#avatar-uploader img').attr('src', responseJSON.thumbnailUrl);
-                        } else {
-                            showError(responseJSON.error);
-                        }
-                    }
-                },
-                debug: true
-            });
-        }
-    }
-
-    function initPhotosUploader() {
-        var upload = $('#upload-photo .button');
-        if (upload.length > 0) {
-            new qq.FineUploaderBasic({
-                button: upload[0],
-                request: {
-                    endpoint: 'upload-photos.json'
-                },
-                validation: {
-                    allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
-                },
-                callbacks: {
-                    onSubmit: function (id, fileName) {
-                        upload.hide();
-                        $('#upload-photo .upload-container').append('<img src="/static/images/loading.gif" alt="Loading..." class="progress photo-uploading">');
+                    validation: {
+                        allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
                     },
-                    onComplete: function (id, fileName, responseJSON) {
-                        upload.show();
-                        $('#upload-photo .progress').remove();
-                        if (responseJSON.success) {
-                            addPhotoUploadResult(responseJSON);
-                        } else {
-                            showError(responseJSON.error);
+                    callbacks: {
+                        onSubmit: function (id, fileName) {
+                            upload.hide();
+                            $('#upload-photo .upload-container').append('<img src="/static/images/loading.gif" alt="Loading..." class="progress photo-uploading">');
+                        },
+                        onComplete: function (id, fileName, responseJSON) {
+                            upload.show();
+                            $('#upload-photo .progress').remove();
+                            if (responseJSON.success) {
+                                addPhotoUploadResult(responseJSON);
+                            } else {
+                                showError(responseJSON.error);
+                            }
                         }
-                    }
-                },
-                debug: true
-            });
+                    },
+                    debug: true
+                });
+            }
+        }
+
+        function addPhotoUploadResult(result) {
+            let template = $('#upload-photo-result-template').html();
+            $('#upload-photo').after(template);
+            $('#current-photo .large-photo').attr('href', result.largeUrl);
+            $('#current-photo .large-photo').removeClass('large-photo');
+            $('#current-photo .small-photo').attr('src', result.smallUrl);
+            $('#current-photo .small-photo').removeClass('small-photo');
+            $('#current-photo .original-photo').attr('href', result.originalUrl);
+            $('#current-photo .original-photo').removeClass('original-photo');
+
+            $('#current-photo .created').after(result.created);
+            $('#current-photo .created').remove();
+            $('#current-photo .views').after(result.views);
+            $('#current-photo .views').remove();
+            $('#current-photo .downloads').after(result.downloads);
+            $('#current-photo .downloads').remove();
+            $('#current-photo').removeAttr('id');
+
+            let photoLimit = parseInt($('#photo-container').attr('data-photo-limit'));
+            let realItems = $('#photo-container .photo-item').length;
+            let toRemoveCount = realItems - photoLimit;
+            while (toRemoveCount > 0) {
+                $('#photo-container .photo-item:last').remove();
+                toRemoveCount--;
+            }
+            recreateAdaptiveClasses();
+            initPoptrox();
+        }
+
+        function recreateAdaptiveClasses() {
+            let i;
+            let photoItems = $('#photo-container .photo-item');
+            for (i = 0; i < photoItems.length; i++) {
+                let item = $(photoItems[i]);
+                item.removeClass('6u');
+                item.removeClass('6u$');
+                if (i % 2 == 0) {
+                    item.addClass('6u');
+                } else {
+                    item.addClass('6u$');
+                }
+            }
         }
     }
 
-    function addPhotoUploadResult(result) {
-        var template = $('#upload-photo-result-template').html();
-        $('#upload-photo').after(template);
-        $('#current-photo .large-photo').attr('href', result.largeUrl);
-        $('#current-photo .large-photo').removeClass('large-photo');
-        $('#current-photo .small-photo').attr('src', result.smallUrl);
-        $('#current-photo .small-photo').removeClass('small-photo');
-        $('#current-photo .original-photo').attr('href', result.originalUrl);
-        $('#current-photo .original-photo').removeClass('original-photo');
-
-        $('#current-photo .created').after(result.created);
-        $('#current-photo .created').remove();
-        $('#current-photo .views').after(result.views);
-        $('#current-photo .views').remove();
-        $('#current-photo .downloads').after(result.downloads);
-        $('#current-photo .downloads').remove();
-        $('#current-photo').removeAttr('id');
-        
-        var photoLimit = parseInt($('#photo-container').attr('data-photo-limit'));
-        var realItems = $('#photo-container .photo-item').length;
-        var toRemoveCount = realItems - photoLimit;
-        while(toRemoveCount > 0) {
-            $('#photo-container .photo-item:last').remove();
-            toRemoveCount--;
-        }
-		recreateAdaptiveClasses();
-        initPoptrox();
-    }
-	
-	function recreateAdaptiveClasses(){
-		var i;
-		var photoItems = $('#photo-container .photo-item');
-		for(i = 0; i < photoItems.length; i++) {
-			var item = $(photoItems[i]);
-			item.removeClass('6u');
-			item.removeClass('6u$');
-			if(i % 2 == 0) {
-				item.addClass('6u');
-			} else {
-				item.addClass('6u$');
-			}
-		}
-	}
-});
+);

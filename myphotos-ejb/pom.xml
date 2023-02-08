@@ -42,11 +42,30 @@
             <scope>provided</scope>
         </dependency>
 
+<!--Thumbnailator - a thumbnail generation library for Java (создание image миниатюр)-->
         <dependency>
             <groupId>net.coobird</groupId>
             <artifactId>thumbnailator</artifactId>
             <version>0.4.19</version>
         </dependency>
+<!--Facebook API -->
+        <dependency>
+            <groupId>com.restfb</groupId>
+            <artifactId>restfb</artifactId>
+            <version>2022.11.0</version>
+        </dependency>
+<!--Google-plus API -->
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.18.3</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.example</groupId>

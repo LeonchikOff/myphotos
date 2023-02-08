@@ -63,21 +63,21 @@ body {
     margin-right: auto;
 }
 
-.container.\31 25\25 {
+.container.\31 \25\25 {
     width: 100%;
     max-width: 1200px;
     min-width: 960px;
 }
 
-.container.\37 5\25 {
+.container.\37 \5\25 {
     width: 720px;
 }
 
-.container.\35 0\25 {
+.container.\35 \0\25 {
     width: 480px;
 }
 
-.container.\32 5\25 {
+.container.\32 \5\25 {
     width: 240px;
 }
 
@@ -87,21 +87,21 @@ body {
 
 @media screen and (max-width: 1800px) {
 
-    .container.\31 25\25 {
+    .container.\31 \25\25 {
         width: 100%;
         max-width: 1200px;
         min-width: 960px;
     }
 
-    .container.\37 5\25 {
+    .container.\37 \5\25 {
         width: 720px;
     }
 
-    .container.\35 0\25 {
+    .container.\35 \0\25 {
         width: 480px;
     }
 
-    .container.\32 5\25 {
+    .container.\32 \5\25 {
         width: 240px;
     }
 
@@ -1427,7 +1427,7 @@ body {
         margin-left: 0;
     }
 
-    .\31 0u\28xsmall\29, .\31 0u\24\28xsmall\29 {
+    .\31 0u0\28xsmall\29, .\31 0u\24\28xsmall\29 {
         width: 83.3333333333%;
         clear: none;
         margin-left: 0;

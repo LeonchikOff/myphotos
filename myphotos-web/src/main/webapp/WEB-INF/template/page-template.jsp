@@ -4,6 +4,7 @@
 <head>
     <title>myphotos.com</title>
     <meta charset="utf-8"/>
+    <meta name="referrer" content="no-referrer-when-downgrade"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <jsp:include page="../fragment/styles.jsp"/>
 </head>
