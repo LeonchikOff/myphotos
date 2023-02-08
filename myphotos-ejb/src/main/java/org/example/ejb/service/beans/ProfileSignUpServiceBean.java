@@ -29,11 +29,12 @@ public class ProfileSignUpServiceBean implements ProfileSignUpService, Serializa
     @Override
     public void createSignUpProfile(Profile profile) {
         this.profile = profile;
+        profileService.translateSocialProfile(profile);
     }
 
     @Override
     public Profile getCurrentProfile() throws ObjectNotFoundException {
-        if(this.profile == null) {
+        if (this.profile == null) {
             throw new ObjectNotFoundException("Profile not found. Please create profile before use");
         }
         return this.profile;
@@ -51,25 +52,28 @@ public class ProfileSignUpServiceBean implements ProfileSignUpService, Serializa
         this.profile = null;
     }
 
-//после создания
+    //после создания
     @PostConstruct
     private void postConstruct() {
         logger.log(Level.FINE, "Created {0} instance: {1}",
                 new Object[]{this.getClass().getSimpleName(), System.identityHashCode(this)});
     }
-//перед использованием
+
+    //перед использованием
     @PostActivate
     private void postActivate() {
         logger.log(Level.FINE, "Activated {0} instance: {1}",
                 new Object[]{this.getClass().getSimpleName(), System.identityHashCode(this)});
     }
-//после использования
+
+    //после использования
     @PrePassivate
     private void prePassivate() {
         logger.log(Level.FINE, "Passivated {0} instance: {1}",
                 new Object[]{this.getClass().getSimpleName(), System.identityHashCode(this)});
     }
-//перед удалением
+
+    //перед удалением
     @PreDestroy
     private void preDestroy() {
         logger.log(Level.FINE, "Destroyed {0} instance: {1}",

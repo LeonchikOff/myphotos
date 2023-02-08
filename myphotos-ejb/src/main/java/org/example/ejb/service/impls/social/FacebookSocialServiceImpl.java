@@ -1,4 +1,4 @@
-package org.example.ejb.service.impl.social;
+package org.example.ejb.service.impls.social;
 
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;

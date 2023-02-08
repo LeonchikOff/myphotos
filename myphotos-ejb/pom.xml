@@ -60,10 +60,17 @@
             <artifactId>google-api-client</artifactId>
             <version>2.2.0</version>
         </dependency>
+<!-- Java implementation of JSON Web Token (JWT) decoder-->
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
             <version>3.18.3</version>
+        </dependency>
+<!--Unicode to ASCII Java Library-->
+        <dependency>
+            <groupId>com.moparisthebest</groupId>
+            <artifactId>junidecode</artifactId>
+            <version>0.1.1</version>
         </dependency>
 
 

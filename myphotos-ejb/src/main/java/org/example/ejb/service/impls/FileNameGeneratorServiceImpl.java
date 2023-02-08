@@ -1,4 +1,4 @@
-package org.example.ejb.service.impl;
+package org.example.ejb.service.impls;
 
 import org.example.ejb.service.FileNameGeneratorService;
 

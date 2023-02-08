@@ -1,4 +1,4 @@
-package org.example.ejb.service.impl;
+package org.example.ejb.service.impls;
 
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;

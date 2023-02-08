@@ -13,5 +13,5 @@ public interface ProfileRepository extends EntityRepository<Profile, Long> {
 
     void updateRating();
 
-    List<String> checkAvailableUids(List<String> uids);
+    List<String> checkExistingUids(List<String> uids);
 }

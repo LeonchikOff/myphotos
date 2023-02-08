@@ -1,4 +1,4 @@
-package org.example.ejb.service.impl;
+package org.example.ejb.service.impls;
 
 import org.example.common.cdi.annotation.Property;
 import org.example.common.config.ImageCategory;

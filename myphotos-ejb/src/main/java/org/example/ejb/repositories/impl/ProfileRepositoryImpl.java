@@ -53,7 +53,7 @@ public class ProfileRepositoryImpl extends AbstractJPARepository<Profile, Long> 
 
     @JPAQuery(parameterizedQuery =
             "SELECT p.uid FROM Profile p WHERE p.uid IN :uids")
-    public List<String> checkAvailableUids(List<String> uids) {
+    public List<String> checkExistingUids(List<String> uids) {
         return entityManager
                 .createNamedQuery("Profile.checkAvailableUids", String.class)
                 .setParameter("uids", uids)
