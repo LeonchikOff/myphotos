@@ -28,6 +28,7 @@ public class TempFileFactory {
     }
 
     public static void deleteTempFile(Path path) {
+//        TODO Невозможно удлить временный фаил (эксепшн при сохранении редактированного нового зарегистрированного пользователя)
         try {
             Files.deleteIfExists(path);
         } catch (IOException | RuntimeException exception) {

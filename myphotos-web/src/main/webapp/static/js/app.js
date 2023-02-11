@@ -172,7 +172,7 @@ $(function () {
                 new qq.FineUploaderBasic({
                     button: avatarUploader[0],
                     request: {
-                        endpoint: 'upload-avatar.json'
+                        endpoint: '/upload-avatar'
                     },
                     validation: {
                         allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
@@ -201,7 +201,7 @@ $(function () {
                 new qq.FineUploaderBasic({
                     button: upload[0],
                     request: {
-                        endpoint: 'upload-photos.json'
+                        endpoint: '/upload-photos'
                     },
                     validation: {
                         allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']

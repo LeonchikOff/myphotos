@@ -7,6 +7,7 @@ import org.example.model.model.domain.Profile;
 import org.example.model.service.PhotoService;
 import org.example.model.service.ProfileService;
 import org.example.web.Constants;
+import org.example.web.security.SecurityUtils;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -39,20 +40,24 @@ public class ProfileController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String requestURI = req.getRequestURI();
         if (homeUrl.contains(requestURI)) {
-            Optional<String> sortModePramOptional = Optional.ofNullable(req.getParameter("sortMode"));
-            SortMode sortMode = sortModePramOptional.map(new Function<String, SortMode>() {
-                @Override
-                public SortMode apply(String nameOfSortMode) {
-                    return SortMode.of(nameOfSortMode);
-                }
-            }).orElse(SortMode.POPULAR_PHOTO);
-            List<Photo> popularPhotos = photoService.findPopularPhotos(sortMode, new Pageable(1, Constants.PHOTO_LIMIT));
-            long countAllPhotos = photoService.countAllPhotos();
-            req.setAttribute("sortMode", sortMode.name().toLowerCase());
-            req.setAttribute("photos", popularPhotos);
-            req.setAttribute("countAllPhotos", countAllPhotos);
+            if (SecurityUtils.isTempAuthenticated()) {
+                resp.sendRedirect("/sign-up");
+            } else {
+                Optional<String> sortModePramOptional = Optional.ofNullable(req.getParameter("sortMode"));
+                SortMode sortMode = sortModePramOptional.map(new Function<String, SortMode>() {
+                    @Override
+                    public SortMode apply(String nameOfSortMode) {
+                        return SortMode.of(nameOfSortMode);
+                    }
+                }).orElse(SortMode.POPULAR_PHOTO);
+                List<Photo> popularPhotos = photoService.findPopularPhotos(sortMode, new Pageable(1, Constants.PHOTO_LIMIT));
+                long countAllPhotos = photoService.countAllPhotos();
+                req.setAttribute("sortMode", sortMode.name().toLowerCase());
+                req.setAttribute("photos", popularPhotos);
+                req.setAttribute("countAllPhotos", countAllPhotos);
 
-            req.setAttribute("dynamicPage", "../view/home.jsp");
+                req.setAttribute("dynamicPage", "../view/home.jsp");
+            }
         } else {
             String uidProfile = requestURI.substring(1);
             Profile profile = profileService.findByUid(uidProfile);

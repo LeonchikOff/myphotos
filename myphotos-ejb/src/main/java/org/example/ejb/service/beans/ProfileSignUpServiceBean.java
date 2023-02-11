@@ -1,6 +1,9 @@
 package org.example.ejb.service.beans;
 
+import org.example.common.config.Constants;
+import org.example.ejb.model.URLImageResource;
 import org.example.model.exception.ObjectNotFoundException;
+import org.example.model.model.AsyncOperation;
 import org.example.model.model.domain.Profile;
 import org.example.model.service.ProfileService;
 import org.example.model.service.ProfileSignUpService;
@@ -41,9 +44,28 @@ public class ProfileSignUpServiceBean implements ProfileSignUpService, Serializa
     }
 
     @Override
-    @Remove
+    @Remove // Applied to a business method of a stateful session bean class.
+    // Indicates that the stateful session bean is to be removed by the container after completion of the method.
     public void completeSignUpProfile() {
         profileService.signUpWithDeliveryToDB(this.profile, false);
+        if (profile.getAvatarUrl() != null) {
+            profileService.uploadNewAvatar(profile, new URLImageResource(profile.getAvatarUrl()), new AsyncOperation<Profile>() {
+                @Override
+                public long getTimeOutOfOperationInMillis() {
+                    return Constants.DEFAULT_ASYNC_OPERATION_TIMEOUT_IN_MILLIS;
+                }
+
+                @Override
+                public void onSuccessOperation(Profile result) {
+                    logger.log(Level.INFO, "Profile avatar successful saved to {0}", result.getAvatarUrl());
+                }
+
+                @Override
+                public void onFailedOperation(Throwable throwable) {
+                    logger.log(Level.SEVERE, "Profile avatar can't saved: " + throwable.getMessage(), throwable);
+                }
+            });
+        }
     }
 
     @Override

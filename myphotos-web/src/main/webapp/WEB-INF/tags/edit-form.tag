@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 <%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true" language="java" %>
 
 <%@ attribute name="header" type="java.lang.String" required="true" %>
@@ -36,28 +37,36 @@
         <h4>${pageScope.header}</h4>
         <form method="post" action="${saveAction}">
             <input type="hidden" name="avatarUrl" value="${requestScope.profile.avatarUrl}"/>
-            <label class="${'6u 12u$(xsmall)'}"  style="float:left;  padding: 0 1%">
-                <input name="firstName" type="text" value="${requestScope.profile.firstName}" placeholder="Your first name"/></label>
-            <label class="${'6u$ 12u$(xsmall)'}" style="float:right; padding: 0 1%">
-                <input name="lastName"  type="text" value="${requestScope.profile.lastName}" placeholder="Your last name"/></label>
-            <label class="${'6u 12u$(xsmall)'}"  style="float:left;  padding: 0 1%">
-                <input name="jobTitle" type="text" value="${requestScope.profile.jobTitle}" placeholder="Your job title"/></label>
-            <label class="${'6u$ 12u$(xsmall)'}" style="float:right; padding: 0 1%" >
-                <input name="location" type="text" value="${requestScope.profile.location}" placeholder="Where are you from"/></label>
-            <c:if test="${isAgreeCheckBoxAvailable}">
+            <div class="row uniform 50%">
+                <label class="${'6u 12u$(xsmall)'}">
+                    <tags:input-text nameOfField="firstName" placeholder="Your first name"
+                                     value="${requestScope.profile.firstName}" bindId="firstName"/></label>
+                <label class="${'6u$ 12u$(xsmall)'}">
+                    <tags:input-text nameOfField="lastName" placeholder="Your last name"
+                                     value="${requestScope.profile.lastName}" bindId="lastName"/></label>
+                <label class="${'6u 12u$(xsmall)'}">
+                    <tags:input-text nameOfField="jobTitle" placeholder="Your job title"
+                                     value="${requestScope.profile.jobTitle}" bindId="jobTitle"/></label>
+                <label class="${'6u$ 12u$(xsmall)'}">
+                    <tags:input-text nameOfField="location" placeholder="Where are you from"
+                                     value="${requestScope.profile.location}" bindId="location"/></label>
+                <c:if test="${isAgreeCheckBoxAvailable}">
+                    <div class="${'12u$'}">
+                        <c:set var="lable">
+                            I agree to the <a href="/terms">terms of service</a>
+                        </c:set>
+                        <tags:input-checkbox nameOfField="agreement" value="${requestScope.profile.agreement}"
+                                             lable="${lable}"/>
+                    </div>
+                </c:if>
                 <div class="${'12u$'}">
-                    <c:set var="lable">I agree to the <a href="/terms">terms of service</a></c:set>
-                    <input type="checkbox" name="agree" id="agree" ${pageScope.value ? 'checked' : ''}>
-                    <label for="agree">${lable}</label>
+                    <ul class="actions">
+                        <li><input type="submit" value="${saveCaption}" class="special small"/></li>
+                        <c:if test="${isCancelBtnAvailable}">
+                            <li><a href="/${requestScope.profile.uid}" class="button small">Cancel</a></li>
+                        </c:if>
+                    </ul>
                 </div>
-            </c:if>
-            <div class="${'12u$'}">
-                <ul class="actions">
-                    <li><input type="submit" value="${saveCaption}" class="special small"/></li>
-                    <c:if test="${isCancelBtnAvailable}">
-                        <li><a href="/${requestScope.profile.uid}" class="button small">Cancel</a></li>
-                    </c:if>
-                </ul>
             </div>
         </form>
     </section>

@@ -33,10 +33,10 @@ public class PhotoRepositoryImpl extends AbstractJPARepository<Photo, Long> impl
     @JPAQuery(parameterizedQuery =
             "SELECT COUNT(ph) FROM Photo ph WHERE ph.profile.id=:profileId")
     public int countOfProfilePhotos(Long profileId) {
-        return entityManager
-                .createNamedQuery("Photo.countOfProfilePhotos", Integer.class)
+        return ((Number) entityManager
+                .createNamedQuery("Photo.countOfProfilePhotos")
                 .setParameter("profileId", profileId)
-                .getSingleResult();
+                .getSingleResult()).intValue();
     }
 
     @Override
@@ -65,9 +65,9 @@ public class PhotoRepositoryImpl extends AbstractJPARepository<Photo, Long> impl
     @JPAQuery(parameterizedQuery =
             "SELECT COUNT(ph) FROM Photo ph")
     public long countAllPhotosToDB() {
-        return entityManager
-                .createNamedQuery("Photo.countAllPhotosToDB", Long.class)
-                .getSingleResult();
+        return ((Number)entityManager
+                .createNamedQuery("Photo.countAllPhotosToDB")
+                .getSingleResult()).intValue();
     }
 }
 

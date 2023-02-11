@@ -2,6 +2,7 @@ package org.example.ejb.service.beans;
 
 import org.example.common.cdi.annotation.Property;
 import org.example.common.config.ImageCategory;
+import org.example.ejb.model.URLImageResource;
 import org.example.ejb.repositories.ProfileRepository;
 import org.example.ejb.service.ImageStorageService;
 import org.example.ejb.service.TranslitConverter;
@@ -16,13 +17,19 @@ import org.example.model.service.ProfileService;
 import javax.ejb.*;
 import javax.inject.Inject;
 import javax.interceptor.Interceptors;
+import javax.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @Stateless
 @LocalBean
 @Local(ProfileService.class)
 public class ProfileServiceBean implements ProfileService {
+
+    @Inject
+    private Logger logger;
 
     @EJB
     private ImageProcessorBean imageProcessorBean;
@@ -69,7 +76,15 @@ public class ProfileServiceBean implements ProfileService {
     public void signUpWithDeliveryToDB(Profile profile, boolean uploadProfileAvatar) {
         if (profile.getUid() == null)
             this.setProfileUid(profile);
-        profileRepository.create(profile);
+        try {
+            profileRepository.create(profile);
+        } catch (ConstraintViolationException e) {
+            logger.log(Level.SEVERE, "Exception: ", e);
+            e.getConstraintViolations().forEach(err -> logger.log(Level.SEVERE, err.toString()));
+        }
+        if (uploadProfileAvatar && profile.getAvatarUrl() != null) {
+            uploadNewAvatar(profile, new URLImageResource(profile.getAvatarUrl()));
+        }
     }
 
     private void setProfileUid(Profile profile) {

@@ -53,9 +53,9 @@ public class Profile extends AbstractDomain {
     private String lastName;
 
     @NotNull
-    @Size(max = 255)
+    @Size(max = 500)
     @Basic(optional = false)
-    @Column(name = "avatar_url", nullable = false, length = 255)
+    @Column(name = "avatar_url", nullable = false, length = 500)
     private String avatarUrl;
 
     @NotNull(message = "{Profile.jobTitle.NotNull}")

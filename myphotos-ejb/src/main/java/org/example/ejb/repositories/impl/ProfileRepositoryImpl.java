@@ -6,6 +6,7 @@ import org.example.model.model.domain.Profile;
 
 import javax.enterprise.context.Dependent;
 import javax.persistence.NoResultException;
+import javax.persistence.Query;
 import javax.persistence.StoredProcedureQuery;
 import java.util.List;
 import java.util.Optional;
@@ -50,15 +51,15 @@ public class ProfileRepositoryImpl extends AbstractJPARepository<Profile, Long> 
     }
 
     @Override
-
     @JPAQuery(parameterizedQuery =
             "SELECT p.uid FROM Profile p WHERE p.uid IN :uids")
     public List<String> checkExistingUids(List<String> uids) {
         return entityManager
-                .createNamedQuery("Profile.checkAvailableUids", String.class)
+                .createNamedQuery("Profile.checkExistingUids", String.class)
                 .setParameter("uids", uids)
                 .getResultList();
     }
+
 
     @Override
     public void updateRating() {

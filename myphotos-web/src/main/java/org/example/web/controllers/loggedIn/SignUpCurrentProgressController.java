@@ -2,6 +2,7 @@ package org.example.web.controllers.loggedIn;
 
 import org.example.model.model.domain.Profile;
 import org.example.web.component.ProfileSignUpServiceProxy;
+import org.example.web.forms.ProfileForm;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -21,7 +22,7 @@ public class SignUpCurrentProgressController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Profile currentProfile = profileSignUpService.getCurrentProfile();
         System.out.println("CURRENT PROFILE: " + currentProfile.toString());
-        req.setAttribute("profile", currentProfile);
+        req.setAttribute("profile", new ProfileForm(currentProfile));
 //        RoutingUtil.forwardToPage("home",req, resp);
         req.setAttribute("dynamicPage", "../view/sign-up.jsp");
         req.getRequestDispatcher("WEB-INF/template/page-template.jsp").forward(req, resp);

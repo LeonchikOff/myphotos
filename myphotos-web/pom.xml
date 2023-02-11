@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-    <artifactId>myphotos</artifactId>
-    <groupId>org.example</groupId>
-    <version>1.0</version>
-  </parent>
+        <artifactId>myphotos</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0</version>
+    </parent>
 
     <artifactId>myphotos-web</artifactId>
     <version>1.0</version>
@@ -17,8 +18,9 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     <dependencies>
+        <!--Java EE 7-->
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
@@ -31,12 +33,24 @@
             <artifactId>jakarta.servlet.jsp.jstl</artifactId>
             <version>1.2.6</version>
         </dependency>
+        <!-- Commons IO library contains utility classes, stream implementations, file filters, file comparators, endian transformation classes, and much more.-->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.5</version>
         </dependency>
-
+        <!--BeanUtils provides an easy-to-use but flexible wrapper around reflection and introspection.-->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <!--   фреймворком с открытым исходным кодом, который выполняет аутентификацию, авторизацию, криптографию и управление сессиями.-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>1.10.0</version>
+        </dependency>
 
 
         <dependency>

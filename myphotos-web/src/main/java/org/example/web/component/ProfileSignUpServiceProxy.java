@@ -66,7 +66,9 @@ public class ProfileSignUpServiceProxy implements ProfileSignUpService, Serializ
     @Override
     public void completeSignUpProfile() {
         validate();
+        System.out.println("!!!!!!!!!!!!!!BEFORE!!!!!completeSignUpProfile!!!!!!!!!!!!!!!!!!!");
         profileSignUpService.completeSignUpProfile();
+        System.out.println("!!!!!!!!!!!!!!AFTER!!!!!completeSignUpProfile!!!!!!!!!!!!!!!!!!!");
         profileSignUpService = null;
     }
 
