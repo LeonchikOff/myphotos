@@ -13,7 +13,7 @@
         <module>myphotos-ejb</module>
         <module>myphotos-web</module>
         <module>myphotos-generator</module>
+        <module>myphotos-ws</module>
         <!--        <module>myphotos-rest</module>-->
-<!--        <module>myphotos-ws</module>-->
     </modules>
 </project>

@@ -62,6 +62,12 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        <!--BeanUtils provides an easy-to-use but flexible wrapper around reflection and introspection.-->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.4</version>
+        </dependency>
     </dependencies>
 
     <build>

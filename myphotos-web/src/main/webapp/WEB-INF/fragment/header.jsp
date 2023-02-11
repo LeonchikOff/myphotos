@@ -4,7 +4,7 @@
 
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
 
-<tags:if-not-error>
+<%--<tags:if-not-error>--%>
     <shiro:authenticated>
         <header class="menu">
             <a class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -31,6 +31,6 @@
             </header>
         </c:if>
     </shiro:notAuthenticated>
-</tags:if-not-error>
+<%--</tags:if-not-error>--%>
 
 
