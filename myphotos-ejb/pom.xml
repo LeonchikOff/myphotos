@@ -22,51 +22,37 @@
     </properties>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.persistence</groupId>-->
-<!--            <artifactId>eclipselink</artifactId>-->
-<!--            <version>2.5.2</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.persistence</groupId>-->
-<!--            <artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>-->
-<!--            <version>2.5.2</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-
-<!--Thumbnailator - a thumbnail generation library for Java (создание image миниатюр)-->
+        <!--Thumbnailator - a thumbnail generation library for Java (создание image миниатюр)-->
         <dependency>
             <groupId>net.coobird</groupId>
             <artifactId>thumbnailator</artifactId>
             <version>0.4.19</version>
         </dependency>
-<!--Facebook API -->
+        <!--Facebook API -->
         <dependency>
             <groupId>com.restfb</groupId>
             <artifactId>restfb</artifactId>
             <version>2022.11.0</version>
         </dependency>
-<!--Google-plus API -->
+        <!--Google-plus API -->
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
             <version>2.2.0</version>
         </dependency>
-<!-- Java implementation of JSON Web Token (JWT) decoder-->
+        <!-- Java implementation of JSON Web Token (JWT) decoder-->
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
             <version>3.18.3</version>
         </dependency>
-<!--Unicode to ASCII Java Library-->
+        <!--Unicode to ASCII Java Library-->
         <dependency>
             <groupId>com.moparisthebest</groupId>
             <artifactId>junidecode</artifactId>

@@ -14,7 +14,7 @@ public abstract class AbstractMimeTypeImageResourceImpl implements ImageResource
 
     private Path tempPath;
 
-    protected abstract void copyContent() throws IOException;
+    protected abstract void copyContent() throws Exception;
 
     @Override
     public final Path getTempPath() {
